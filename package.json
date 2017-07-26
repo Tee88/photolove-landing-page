@@ -1,0 +1,12 @@
+{
+  "name": "photolove-landing-page",
+  "version": "1.0.0",
+  "description": "psd to html project",
+  "main": "index.js",
+  "author": "Taha Saleh <taha.a.saleh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "3.0.3"
+  }
+}
