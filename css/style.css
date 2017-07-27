@@ -1,3 +1,50 @@
+/* RESET CSS BEGIN */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
 /*HELPER CLASSES BEGIN*/
 
 
@@ -13,9 +60,22 @@ ol li{
     margin-bottom: 20px;
 }
 
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
 /*HELPER CLASSES END*/
 
 
+
+*{
+    box-sizing: border-box;
+}
 
 @font-face{
     font-family: "HelveticaNeue-Thin";
@@ -28,8 +88,97 @@ ol li{
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+    padding: 40px 20px;
+    overflow: hidden;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero{
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6),rgba(218, 51, 46, 0.6)),url(../img/hero-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h2{
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.logo-img{
+    float: left;
+}
+nav{
+    float: right;
+}
+
+.nav{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 24px;
+    text-transform: uppercase;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: solid white 5px transparent;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+.nav li a:hover{
+    border-bottom: solid white 5px;
+    transition: border-bottom 0.1s, color 0.1s;
+    
+}
+.cta{
+    margin-top: 90px;
+    display: inline-block;
+    position: relative;
+}
+.cta-info{
+    width: 60%;
+    padding-right: 150px;
+    float: left;
+    
+}
+
+.cta-info h2{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+.cta-info p{
+    font-size: 36px;
+    font-family: HelveticaNeue-Thin;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 50px;
+    
+}
+.cta-img{
+/*    text-align: right;*/
+    position: absolute;
+    float: right;
+    right: 0px;
+}
+.iphone{
+    width: 85%;
+}
+.download-btn{
+    background-color: #282828;
+    color: white;
+    text-decoration: none;
+    padding: 23px 35px;
+    border-radius: 50px;
+}
+.download-btn img{
+    vertical-align: middle;
+    margin-right: 20px;
+    
 }
