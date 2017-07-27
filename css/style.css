@@ -1,60 +1,152 @@
 /* RESET CSS BEGIN */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
-    
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+
 /*RESET CSS END*/
+
 
 /*HELPER CLASSES BEGIN*/
 
-
 em,
-i{
+i {
     font-style: italic;
 }
+
 p,
 ul li,
-ol li{
+ol li {
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 20px;
@@ -69,22 +161,20 @@ ol li{
 .clearfix::after {
     clear: both;
 }
+
+
 /*HELPER CLASSES END*/
 
-
-
-*{
+* {
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "HelveticaNeue-Thin";
     src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
 }
 
-
-
-.container{
+.container {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
@@ -92,93 +182,144 @@ ol li{
     overflow: hidden;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-.hero{
-    background-image: linear-gradient(rgba(218, 51, 46, 0.6),rgba(218, 51, 46, 0.6)),url(../img/hero-bg.png);
+.hero {
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url(../img/hero-bg.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-h2{
+
+h2 {
     font-size: 52px;
     font-weight: 700;
     text-transform: uppercase;
-    
 }
-.logo-img{
+
+.logo-img {
     float: left;
 }
-nav{
+
+nav {
     float: right;
 }
 
-.nav{
+.nav {
     list-style: none;
 }
-.nav li{
+
+.nav li {
     display: inline-block;
     margin-left: 24px;
     text-transform: uppercase;
 }
-.nav li a{
+
+.nav li a {
     color: white;
     text-decoration: none;
     padding-bottom: 16px;
     border-bottom: solid white 5px transparent;
     transition: border-bottom 0.5s, color 0.5s;
 }
-.nav li a:hover{
+
+.nav li a:hover {
     border-bottom: solid white 5px;
     transition: border-bottom 0.1s, color 0.1s;
-    
 }
-.cta{
+
+.cta {
     margin-top: 90px;
     display: inline-block;
     position: relative;
 }
-.cta-info{
+
+.cta-info {
     width: 60%;
     padding-right: 150px;
     float: left;
-    
 }
 
-.cta-info h2{
+.cta-info h2 {
     font-weight: bold;
     color: white;
     margin-bottom: 40px;
 }
-.cta-info p{
+
+.cta-info p {
     font-size: 36px;
     font-family: HelveticaNeue-Thin;
     line-height: 40px;
     color: white;
     margin-bottom: 50px;
-    
 }
-.cta-img{
-/*    text-align: right;*/
+
+.cta-img {
+    /*    text-align: right;*/
     position: absolute;
     float: right;
     right: 0px;
 }
-.iphone{
+
+.iphone {
     width: 85%;
 }
-.download-btn{
+
+.download-btn {
     background-color: #282828;
     color: white;
     text-decoration: none;
     padding: 23px 35px;
     border-radius: 50px;
 }
-.download-btn img{
+
+.download-btn img {
     vertical-align: middle;
     margin-right: 20px;
-    
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.col-4-app {
+    float: left;
+    width: 33.33%;
+    padding: 0 45px;
+}
+
+.features .container {
+    text-align: center;
+    padding: 60px 20px
+}
+
+.features .container h2 {
+    color: #8a8a8a;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-family: HelveticaNeue-Thin;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3a3a3a;
+    padding: 0 80px;
+}
+
+.col-4-app p {
+    font-family: HelveticaNeue-Thin;
+    font-size: 18px;
+    line-height: 20px;
+    color: #646464;
+    line-height: 24px;
+}
+
+.col-4-app h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    font-weight: 700;
 }
