@@ -366,3 +366,96 @@ nav {
 .reddish {
     color: #f55150;
 }
+
+footer {
+    background-color: #2e2e38;
+}
+
+footer .container {
+    padding: 120px 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: HelveticaNeue-Thin;
+}
+
+.col-4-footer {
+    float: left;
+    width: 33.33%;
+    padding: 0 45px;
+    color: white;
+}
+
+.posts-list li {
+    font-size: 15px;
+    background: url('../img/rectangle.png') no-repeat;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+footer .row {
+    margin-top: 77px;
+}
+
+.posts-list,
+.tweets,
+.about-info {
+    margin-top: 45px;
+}
+
+.about-info {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.tweets li {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.tweets li:nth-child(1) {
+    font-weight: 700;
+}
+
+.tweets li:nth-child(1) span {
+    display: block;
+    font-weight: 400;
+}
+
+.copyright {
+    background-color: #d7dedc;
+}
+
+.copyright .container * {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+.copyright .container {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.copyright .container a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+}
+
+.copyright .container p {
+    margin: 0 20px;
+}
+
+.cr:after,
+.wb:after {
+    content: "";
+    border: solid 1px #555555;
+    margin-left: 30px;
+}
