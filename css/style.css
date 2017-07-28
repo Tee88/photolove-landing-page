@@ -1,0 +1,461 @@
+/* RESET CSS BEGIN */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+
+/*HELPER CLASSES BEGIN*/
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/*HELPER CLASSES END*/
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Thin";
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url(../img/hero-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 24px;
+    text-transform: uppercase;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: solid white 5px transparent;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+
+.nav li a:hover {
+    border-bottom: solid white 5px;
+    transition: border-bottom 0.1s, color 0.1s;
+}
+
+.cta {
+    margin-top: 90px;
+    display: inline-block;
+    position: relative;
+}
+
+.cta-info {
+    width: 60%;
+    padding-right: 150px;
+    float: left;
+}
+
+.cta-info h2 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta-info p {
+    font-size: 36px;
+    font-family: HelveticaNeue-Thin;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.cta-img {
+    /*    text-align: right;*/
+    position: absolute;
+    float: right;
+    right: 0px;
+}
+
+.iphone {
+    width: 85%;
+}
+
+.download-btn {
+    background-color: #282828;
+    color: white;
+    text-decoration: none;
+    padding: 23px 35px;
+    border-radius: 50px;
+}
+
+.download-btn img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.col-4-app {
+    float: left;
+    width: 33.33%;
+    padding: 0 45px;
+}
+
+.features .container {
+    text-align: center;
+    padding: 60px 20px
+}
+
+.features .container h2 {
+    color: #8a8a8a;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-family: HelveticaNeue-Thin;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3a3a3a;
+    padding: 0 80px;
+}
+
+.col-4-app p {
+    font-family: HelveticaNeue-Thin;
+    font-size: 18px;
+    line-height: 20px;
+    color: #646464;
+    line-height: 24px;
+}
+
+.col-4-app h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    font-weight: 700;
+}
+
+.clown {
+    background-image: url(../img/nose-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.clown-info {
+    width: 60%;
+    padding: 160px 20px;
+}
+
+.clown-info h2 {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.clown-info p {
+    font-size: 24px;
+    line-height: 35px;
+    font-family: HelveticaNeue-Thin;
+    color: #585858;
+    padding-right: 201px;
+    padding-bottom: 30px;
+}
+
+.download-clown {
+    background-color: #d9332d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.download-clown:hover {
+    transition: 0.2s;
+    background: #bb2c27;
+}
+
+.reddish {
+    color: #f55150;
+}
+
+footer {
+    background-color: #2e2e38;
+}
+
+footer .container {
+    padding: 120px 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: HelveticaNeue-Thin;
+}
+
+.col-4-footer {
+    float: left;
+    width: 33.33%;
+    padding: 0 45px;
+    color: white;
+}
+
+.posts-list li {
+    font-size: 15px;
+    background: url('../img/rectangle.png') no-repeat;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+footer .row {
+    margin-top: 77px;
+}
+
+.posts-list,
+.tweets,
+.about-info {
+    margin-top: 45px;
+}
+
+.about-info {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.tweets li {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.tweets li:nth-child(1) {
+    font-weight: 700;
+}
+
+.tweets li:nth-child(1) span {
+    display: block;
+    font-weight: 400;
+}
+
+.copyright {
+    background-color: #d7dedc;
+}
+
+.copyright .container * {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+.copyright .container {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.copyright .container a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+}
+
+.copyright .container p {
+    margin: 0 20px;
+}
+
+.cr:after,
+.wb:after {
+    content: "";
+    border: solid 1px #555555;
+    margin-left: 30px;
+}
