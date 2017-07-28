@@ -323,3 +323,46 @@ nav {
     margin: 30px 0;
     font-weight: 700;
 }
+
+.clown {
+    background-image: url(../img/nose-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.clown-info {
+    width: 60%;
+    padding: 160px 20px;
+}
+
+.clown-info h2 {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.clown-info p {
+    font-size: 24px;
+    line-height: 35px;
+    font-family: HelveticaNeue-Thin;
+    color: #585858;
+    padding-right: 201px;
+    padding-bottom: 30px;
+}
+
+.download-clown {
+    background-color: #d9332d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.download-clown:hover {
+    transition: 0.2s;
+    background: #bb2c27;
+}
+
+.reddish {
+    color: #f55150;
+}
