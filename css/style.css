@@ -193,6 +193,10 @@ body {
     background-position: center;
 }
 
+header {
+    position: relative;
+}
+
 h2 {
     font-size: 52px;
     font-weight: 700;
@@ -230,6 +234,52 @@ nav {
     transition: border-bottom 0.1s, color 0.1s;
 }
 
+#nav-trigger {
+    display: none;
+    text-align: right;
+    cursor: pointer;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 50%;
+    text-align: center;
+    background-color: #2e2e38;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#nav-mobile li {
+    text-transform: uppercase;
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px #828282;
+}
+
+#nav-mobile li:last-child {
+    border-bottom: none;
+}
+
+#nav-mobile a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px 30px;
+}
+
+#nav-mobile a:hover {
+    background: #828282;
+}
+
 .cta {
     margin-top: 90px;
     display: inline-block;
@@ -257,6 +307,7 @@ nav {
 }
 
 .cta-img {
+    text-align: right;
     position: absolute;
     float: right;
     right: 0px;
@@ -269,14 +320,14 @@ nav {
 .iphone-on {
     animation-delay: 2s;
     position: absolute;
-    right: 89px;
+    right: 27px;
     top: 109px;
     width: 71%;
 }
 
 .iphone-btn {
     position: absolute;
-    right: 115px;
+    right: 55px;
 }
 
 .download-btn {
@@ -445,7 +496,7 @@ footer .row {
 
 .copyright .container * {
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     vertical-align: middle;
     margin-bottom: 0px;
 }
@@ -490,4 +541,74 @@ footer .row {
 .something.animated,
 clown-info {
     opacity: 1;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 935px) {
+    #nav-trigger {
+        display: block;
+    }
+    #nav-trigger img {
+        margin-top: 13px;
+    }
+    #nav-mobile {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .cta-img {
+        display: none;
+    }
+    .cta-info {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .col-4-app {
+        float: none;
+        width: 100%;
+        padding: 0 85px;
+        margin-bottom: 100px;
+    }
+    .clown-info p {
+        padding-right: 0;
+    }
+    .clown-info {
+        width: 60%;
+        padding: 0;
+        text-align: center;
+    }
+    .logo-footer {
+        text-align: center;
+    }
+    .col-4-footer {
+        float: none;
+        width: 100%;
+        padding: 0 45px;
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .clown-info {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .clown {
+        background-image: none;
+        background-color: #DEE4E3;
+    }
+    .cr:after,
+    .wb:after {
+        content: "";
+        border: none;
+        margin-left: 0;
+    }
+    .social-media {
+        margin-top: 20px;
+    }
 }
