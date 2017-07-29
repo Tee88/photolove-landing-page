@@ -6,7 +6,9 @@
   "author": "Taha Saleh <taha.a.saleh@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "jquery": "^3.2.1",
-    "normalize.css": "3.0.3"
+    "normalize.css": "3.0.3",
+    "waypoints": "^4.0.1"
   }
 }

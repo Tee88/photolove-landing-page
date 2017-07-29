@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,9 +26,11 @@
         <div class="container clearfix">
             <header class="clearfix">
                 <div class="logo-img">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                    <h1>
+                        <a href="#"><img src="img/logo.png" alt="logo"></a>
+                    </h1>
                 </div>
-                <nav>
+                <nav class="nav-main">
                     <ul class="nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Features</a></li>
@@ -36,9 +39,19 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+                <div id="nav-trigger">
+                    <img src="img/hamburger.png" alt="menu">
+                </div>
+                <nav id="nav-mobile">
+
+                </nav>
             </header>
             <div class="cta clearfix">
-                <div class="cta-img"> <img class="iphone" src="img/iphone.png" alt="iphone"> </div>
+                <div class="cta-img">
+                    <img class="iphone-off" src="img/iphone-off.png" alt="iphone-off">
+                    <img class="iphone-btn" src="img/iphone-btn.png" alt="iphone-btn">
+                    <img class="iphone-on" src="img/iphone-on.png" alt="iphone-on">
+                </div>
                 <div class="cta-info">
                     <h2>Chocolate pudding dessert jelly</h2>
                     <p>Fruitcake donut gummies. Candy liquorice buiscuit. Sugar plum jelly gummi bears brownie toffee cupcake caramels brownie cookie.</p>
@@ -54,17 +67,17 @@
                 <p>Donut sesame snaos donut pir dessert chupa wafer drgee. Gummies fruitcake chupa chups cookie liquorice. Chocolate pudding dessert jelly fruitcake tart jelly wafer. Sweet roll carrot cake croissant.</p>
             </div>
             <div class="row clearfix">
-                <div class="col-4-app">
+                <div class="col-4-app scalable">
                     <img src="img/col-1-img.png" alt="scalable">
                     <h3>Scalable</h3>
                     <p>Croissant ice cream macaroon cake. Dessert jelly beans candy cookie. Bear claw candy canes gingerbread caramels cake. Macaroon applicake gummi bears jelly marzipan.</p>
                 </div>
-                <div class="col-4-app">
+                <div class="col-4-app instant">
                     <img src="img/col-2-img.png" alt="instant">
                     <h3>Instant</h3>
                     <p>Croissant ice cream macaroon cake. Dessert jelly beans candy cookie. Bear claw candy canes gingerbread caramels cake. Macaroon applicake gummi bears jelly marzipan.</p>
                 </div>
-                <div class="col-4-app">
+                <div class="col-4-app something">
                     <img src="img/col-3-img.png" alt="something">
                     <h3>Something</h3>
                     <p>Croissant ice cream macaroon cake. Dessert jelly beans candy cookie. Bear claw candy canes gingerbread caramels cake. Macaroon applicake gummi bears jelly marzipan.</p>
@@ -83,7 +96,7 @@
     </section>
     <footer>
         <div class="container">
-            <div class="logo">
+            <div class="logo-footer">
                 <img src="img/site-logo.png" alt="logo" class="footer-logo">
             </div>
             <div class="row clearfix">
@@ -124,6 +137,7 @@
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
