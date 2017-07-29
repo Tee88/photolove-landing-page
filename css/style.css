@@ -471,3 +471,23 @@ footer .row {
     border: solid 1px #555555;
     margin-left: 30px;
 }
+
+
+/*ANIMATION*/
+
+
+/* To avoid bloat, I ditched WOW.js and sticked with animate.css */
+
+.scalable,
+.instant,
+.something,
+.clown-info {
+    opacity: 0;
+}
+
+.scalable.animated,
+.instant.animated,
+.something.animated,
+clown-info {
+    opacity: 1;
+}
