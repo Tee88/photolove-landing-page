@@ -612,3 +612,35 @@ clown-info {
         margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 321px) {
+    h2 {
+        font-size: 35px;
+    }
+    .cta-info p {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 38px;
+    }
+    .download-btn {
+        padding: 23px 25px;
+    }
+    .intro p {
+        padding: 8px;
+    }
+    .col-4-app {
+        padding: 0 8px;
+    }
+    posts-list li {
+        padding-right: 0px;
+    }
+    .col-4-footer {
+        padding: 15px;
+    }
+    .copyright .container {
+        padding: 40px 0px;
+    }
+    #nav-mobile ul {
+        width: 60%;
+    }
+}
