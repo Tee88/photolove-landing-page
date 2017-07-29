@@ -257,14 +257,26 @@ nav {
 }
 
 .cta-img {
-    /*    text-align: right;*/
     position: absolute;
     float: right;
     right: 0px;
 }
 
-.iphone {
+.iphone-off {
     width: 85%;
+}
+
+.iphone-on {
+    animation-delay: 2s;
+    position: absolute;
+    right: 89px;
+    top: 109px;
+    width: 71%;
+}
+
+.iphone-btn {
+    position: absolute;
+    right: 115px;
 }
 
 .download-btn {
